@@ -1,0 +1,5 @@
+@mixin desktop-up {
+  @include breakpoint($desktop-min-width) {
+    @content;
+  }
+}

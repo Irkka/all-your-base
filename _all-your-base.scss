@@ -1,0 +1,49 @@
+$all-your-base-map: (
+fonts: (
+serif: 'Lora',
+sans-serif: 'Questrial',
+monospace: 'VT323',
+cursive: 'Lobster',
+),
+colors: (
+primary: #9955ff,
+scheme: accented-analogic
+)
+);
+
+@import 'media-queries';
+@import 'colors';
+@import 'typography';
+
+
+$colors: map-get($all-your-base-map, colors);
+$palette: palette($colors);
+$fonts: map-get($all-your-base-map, fonts);
+
+@include build-typography($fonts, $palette);
+
+$purple: #9955ff;
+$green: #3DFF64;
+$black: #000000;
+$white: #FFFFFF;
+$gray: #777777;
+
+$web-fonts-protocol: 'http';
+@include import-fonts($fonts);
+
+/*
+Designing a colorscheme
+base color
+
+color harmonies:
+monochromatic - different saturation levels of the base color
+complementary - opposite colors > use complement as an accent color
+triadic - 120deg change in base colors
+tetradic(compound/split complementary) - four complementary color families in a rectangle
+analogous - dominant color, same color family supporting color and a contrasting color
+grayscale
+
+Designing vertical rhythm
+
+baseline value
+*/
