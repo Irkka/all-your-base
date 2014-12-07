@@ -1,5 +1,0 @@
-@mixin import-fonts($font-maps) {
-  @each $font-map in $font-maps {
-    @include web-fonts($font-map);
-  }
-}
