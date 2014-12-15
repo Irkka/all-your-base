@@ -1,0 +1,13 @@
+@import 'all-your-base';
+
+.comment-section {
+  @extend %comment-section;
+}
+
+.comment {
+  @extend %comment;
+}
+
+.comment-responses {
+  @extend %comment-responses;
+}

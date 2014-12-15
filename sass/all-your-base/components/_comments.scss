@@ -1,0 +1,22 @@
+%comment-section {
+  background-color: gray;
+}
+
+%comment-responses {
+  border-left: 5px dotted gray;
+}
+
+%comment {
+  background-color: lightblue;
+
+  %comment {
+    margin-left: 1em;
+    &:nth-of-type(odd) {
+      background-color: lightgray;
+    }
+  }
+
+  &:first-child {
+    border: 1px solid #999;
+  }
+}
