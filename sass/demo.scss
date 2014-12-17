@@ -11,3 +11,11 @@
 .comment-responses {
   @extend %comment-responses;
 }
+
+h1 {
+  @extend %inlaid-text;
+}
+
+p {
+  @extend %glowing-text;
+}
